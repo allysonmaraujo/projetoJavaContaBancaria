@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class ContaBancaria {
     public static void ContaBancaria(String[] args) {
+
         Scanner leitura = new Scanner(System.in);
-        String nome = "Fulano Ciclano da Silva";
+        String nome = "Adalberto Wale da Sylva";
         String tipoConta = "Conta Corrente";
         int saldoDaConta = 2500;
         int opcaoEscolhida = 0;
+
 
         while (opcaoEscolhida != 4){
 
@@ -29,13 +31,20 @@ public class ContaBancaria {
 
             opcaoEscolhida = leitura.nextInt();
 
+
             switch (opcaoEscolhida){
                 case 1:
                     System.out.println("Saldo Atual: R$ " + saldoDaConta);
                 case 2:
                     System.out.println("Digite o valor a ser depositado: ");
-
+                case 4:
+                    System.out.println("Obrigado por utilizar nossos serviços!");
+                    break;
             }
+
+
+
+
         }
     }
 }
